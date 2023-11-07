@@ -3,11 +3,15 @@ import java.util.List;
 
 public class Vendita {
 
-    List<Giocattolo> giocattoli = new ArrayList<>(); 
 
-    static void registroAcquisti(){
-        
-    }
+   public static void aggungiGiocattolo(Giocattolo giocattolo, Cliente cliente){
+
+    cliente.getGiocattoliCliente().add(giocattolo);
+
     
-    
+   }
+
 }
+    
+    
+

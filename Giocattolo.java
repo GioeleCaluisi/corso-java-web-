@@ -5,13 +5,15 @@ public class Giocattolo {
     private String nome;
     private double prezzo;
     private int etaConsigliata;
+    private int disponibilita;
 
 
-     public Giocattolo(int id, String nome, double prezzo, int etaConsigliata) {
+     public Giocattolo( String nome, double prezzo, int etaConsigliata, int disponibilita) {
         id++;
         this.nome = nome;
         this.prezzo = prezzo;
         this.etaConsigliata = etaConsigliata;
+        this.disponibilita=disponibilita;
     }
 
 
@@ -52,6 +54,21 @@ public class Giocattolo {
 
     public void setEtaConsigliata(int etaConsigliata) {
         this.etaConsigliata = etaConsigliata;
+    }
+
+
+    public static void setId(Integer id) {
+        Giocattolo.id = id;
+    }
+
+
+    public int getDisponibilita() {
+        return disponibilita;
+    }
+
+
+    public void setDisponibilita(int disponibilita) {
+        this.disponibilita = disponibilita;
     }
     
     
