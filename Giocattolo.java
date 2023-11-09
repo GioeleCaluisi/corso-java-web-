@@ -1,75 +1,39 @@
 public class Giocattolo {
-
-   
-    private static Integer id=1;
+    private int id;
     private String nome;
     private double prezzo;
-    private int etaConsigliata;
-    private int disponibilita;
+    private int eta;
 
-
-     public Giocattolo( String nome, double prezzo, int etaConsigliata, int disponibilita) {
-        id++;
+    public Giocattolo(int id, String nome, double prezzo, int eta) {
+        this.id = id;
         this.nome = nome;
         this.prezzo = prezzo;
-        this.etaConsigliata = etaConsigliata;
-        this.disponibilita=disponibilita;
+        this.eta = eta;
     }
-
 
     public int getId() {
         return id;
     }
 
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
     public String getNome() {
         return nome;
     }
-
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
 
     public double getPrezzo() {
         return prezzo;
     }
 
-
-    public void setPrezzo(double prezzo) {
-        this.prezzo = prezzo;
+    public int getEta() {
+        return eta;
     }
 
-
-    public int getEtaConsigliata() {
-        return etaConsigliata;
+    @Override
+    public String toString() {
+        return "Giocattolo{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", prezzo=" + prezzo +
+                ", eta=" + eta +
+                '}';
     }
-
-
-    public void setEtaConsigliata(int etaConsigliata) {
-        this.etaConsigliata = etaConsigliata;
-    }
-
-
-    public static void setId(Integer id) {
-        Giocattolo.id = id;
-    }
-
-
-    public int getDisponibilita() {
-        return disponibilita;
-    }
-
-
-    public void setDisponibilita(int disponibilita) {
-        this.disponibilita = disponibilita;
-    }
-    
-    
 }
